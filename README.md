@@ -1,6 +1,16 @@
-# 📚 Documentação ERP Anduril - Índice Completo
+# 📚 Documentação ERP Anduril
 
 Bem-vindo à documentação completa do **ERP Anduril**! Esta documentação é organizada por módulos para facilitar seu entendimento e uso do sistema.
+
+## 📋 Índice
+
+- [Módulos Principais](#-módulos-principais)
+- [Como Usar Esta Documentação](#-como-usar-esta-documentação)
+- [Início Rápido](#-início-rápido)
+- [Desenvolvimento](#-desenvolvimento)
+- [Recursos Rápidos](#-recursos-rápidos)
+- [Contribuindo](#-contribuindo)
+- [Suporte](#-suporte)
 
 ---
 
@@ -94,6 +104,29 @@ Funcionalidades gerais de sistema, backup e gerenciamento de banco de dados.
 
 ---
 
+## 🚀 Início Rápido
+
+Para começar a usar o ERP Anduril:
+
+1. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
+
+2. **Execute o servidor de desenvolvimento da documentação**:
+   ```bash
+   npm run docs:dev
+   ```
+
+3. **Acesse a documentação** no navegador em `http://localhost:5173`
+
+4. **Para gerar a documentação estática**:
+   ```bash
+   npm run docs:build
+   ```
+
+---
+
 ## 📖 Como Usar Esta Documentação
 
 1. **Navegue pelo módulo** que deseja aprender
@@ -120,8 +153,45 @@ Lá você encontrará:
 
 ## ✨ Recursos Rápidos
 
-- **[README Principal](../README.md)** - Visão geral do projeto
-- **Contato/Suporte** - (Adicionar conforme necessário)
+- **[Documentação de Desenvolvimento](./desenvolvimento/)** - Guias técnicos e de desenvolvimento
+- **[Como Acessar](./COMO_ACESSAR.md)** - Informações de acesso ao sistema
+- **[Checklist de Implementação](./CHECKLIST.md)** - Lista de verificação de recursos
+- **[Resumo de Reorganização](./RESUMO_REORGANIZACAO.md)** - Histórico de mudanças na documentação
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Para contribuir com a documentação:
+
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/minha-contribuicao`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova seção sobre X'`)
+4. Push para a branch (`git push origin feature/minha-contribuicao`)
+5. Abra um Pull Request
+
+### Padrões de Documentação
+
+- Use Markdown para todos os arquivos de documentação
+- Inclua imagens sempre que possível para ilustrar processos
+- Mantenha a estrutura de diretórios organizada por módulos
+- Atualize o índice principal quando adicionar novos módulos
+
+---
+
+## 📞 Suporte
+
+Para suporte técnico ou dúvidas sobre o sistema:
+
+- **Email**: [Adicionar email de suporte]
+- **Issues**: [Abra uma issue neste repositório](../../issues)
+- **Wiki**: [Consulte a wiki do projeto](../../wiki)
+
+---
+
+## 📄 Licença
+
+Este projeto e sua documentação são propriedade da empresa. Para mais informações sobre uso e distribuição, entre em contato com o departamento responsável.
 
 ---
 
