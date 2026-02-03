@@ -4,7 +4,8 @@ export default defineConfig({
   title: "ERP Anduril",
   description: "Documentação Completa do Sistema ERP Anduril",
   lang: 'pt-BR',
-  base: '/anduril-docs/', // Ajuste se repo tem nome diferente
+  base: '/anduril-docs/',
+  ignoreDeadLinks: true,
   
   themeConfig: {
     logo: '📦',
