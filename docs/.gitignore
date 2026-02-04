@@ -1,0 +1,5 @@
+*.html
+!index.html
+/assets/
+/vp-icons.css
+/404.html
