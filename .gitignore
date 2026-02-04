@@ -8,7 +8,6 @@ pnpm-debug.log
 # VitePress build output
 docs/.vitepress/dist/
 docs/.vitepress/cache/
-docs-dist/
 .vitepress/dist/
 .vitepress/cache/
 

@@ -1,22 +1,21 @@
-name: Deploy VitePress to GitHub Pages
+name: Deploy VitePress
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'docs/**'
+      - 'package.json'
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       
       - uses: actions/setup-node@v4
         with:
@@ -26,13 +25,14 @@ jobs:
       - run: npm install
       - run: npm run docs:build
       
-      - name: Deploy to GitHub
+      - name: Commit and push build
         run: |
-          rm -rf docs-old
-          [ -d docs ] && mv docs docs-old || true
-          mv docs-dist docs
+          mkdir -p docs
+          cp -r docs/.vitepress/dist/* docs/
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs -f
-          git commit -m "deploy: build VitePress" || true
+          git diff --cached --quiet || git commit -m "chore: update docs build"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
