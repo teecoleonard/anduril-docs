@@ -25,10 +25,19 @@ jobs:
       - run: npm install
       - run: npm run docs:build
       
+      - name: Prepare docs folder
+        run: |
+          # Remove old HTML/CSS/JS files but keep .vitepress source
+          find docs -maxdepth 1 -type f \( -name "*.html" -o -name "*.json" -o -name "*.css" \) -delete
+          find docs -maxdepth 1 -type d \( -name "assets" -o -name "boletos" -o -name "clientes" -o -name "cnab" -o -name "contratos" -o -name "desenvolvimento" -o -name "empresa" -o -name "exportacao" -o -name "sistema" -o -name "terrenos" \) -exec rm -rf {} + 2>/dev/null || true
+      
+      - name: Copy build output
+        run: |
+          cp -r docs/.vitepress/dist/* docs/
+          rm -rf docs/docs-dist docs/.vitepress/dist 2>/dev/null || true
+      
       - name: Commit and push build
         run: |
-          mkdir -p docs
-          cp -r docs/.vitepress/dist/* docs/
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs -f
