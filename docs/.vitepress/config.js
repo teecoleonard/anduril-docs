@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { writeFileSync } from 'fs'
+import { join } from 'path'
 
 export default defineConfig({
   title: "ERP Anduril",
@@ -8,11 +10,9 @@ export default defineConfig({
   ignoreDeadLinks: true,
   
   // Ensure .nojekyll file is created for GitHub Pages
-  buildEnd: async ({ outDir }) => {
-    const fs = await import('fs')
-    const path = await import('path')
-    const nojekyllPath = path.join(outDir, '.nojekyll')
-    fs.writeFileSync(nojekyllPath, '')
+  buildEnd: ({ outDir }) => {
+    const nojekyllPath = join(outDir, '.nojekyll')
+    writeFileSync(nojekyllPath, '')
   },
   
   themeConfig: {
