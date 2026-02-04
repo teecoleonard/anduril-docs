@@ -6,7 +6,7 @@ export default defineConfig({
   lang: 'pt-BR',
   base: '/',
   ignoreDeadLinks: true,
-  outDir: '../dist',
+  outDir: './docs-dist',
   
   themeConfig: {
     logo: '📦',

@@ -28,8 +28,11 @@ jobs:
       
       - name: Deploy to GitHub
         run: |
+          rm -rf docs-old
+          [ -d docs ] && mv docs docs-old || true
+          mv docs-dist docs
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add dist -f
-          git commit -m "deploy: build VitePress"
+          git add docs -f
+          git commit -m "deploy: build VitePress" || true
           git push
