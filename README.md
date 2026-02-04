@@ -3,7 +3,7 @@
 Bem-vindo à documentação completa do **ERP Anduril**! Esta documentação é organizada por módulos para facilitar seu entendimento e uso do sistema.
 
 ## Site
-[text](https://teecoleonard.github.io/anduril-docs/)
+[Anduril Docs](https://teecoleonard.github.io/anduril-docs/)
 
 ## 📖 Como Usar Esta Documentação
 
