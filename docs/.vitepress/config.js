@@ -7,6 +7,14 @@ export default defineConfig({
   base: '/anduril-docs/',
   ignoreDeadLinks: true,
   
+  // Ensure .nojekyll file is created for GitHub Pages
+  buildEnd: async ({ outDir }) => {
+    const fs = await import('fs')
+    const path = await import('path')
+    const nojekyllPath = path.join(outDir, '.nojekyll')
+    fs.writeFileSync(nojekyllPath, '')
+  },
+  
   themeConfig: {
     logo: '📦',
     
