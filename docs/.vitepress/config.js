@@ -1,10 +1,24 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: 'Anduril Docs',
   description: 'Documentação do Sistema ERP Anduril',
   lang: 'pt-BR',
   base: '/anduril-docs/',
+  
+  vite: {
+    server: {
+      port: 8080,
+      host: true
+    }
+  },
+  
+  markdown: {
+    image: {
+      lazyLoading: true
+    }
+  },
   
   themeConfig: {
     logo: '📚',
@@ -121,11 +135,11 @@ export default defineConfig({
 
     footer: {
       message: 'Documentação do Sistema ERP Anduril',
-      copyright: 'Copyright © 2024-2026'
+      copyright: 'Copyright © 2026'
     },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/teecoleonard/anduril-docs' }
     ]
   }
-})
+}))

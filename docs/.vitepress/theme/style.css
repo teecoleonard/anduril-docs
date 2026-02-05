@@ -1,0 +1,30 @@
+/* Medium Zoom Styles */
+.vp-doc img {
+  cursor: zoom-in;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.vp-doc img:hover {
+  opacity: 0.9;
+}
+
+/* Medium Zoom - Imagem ampliada */
+.medium-zoom-image {
+  cursor: zoom-out !important;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Overlay do Medium Zoom */
+.medium-zoom-overlay {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  z-index: 999 !important;
+  opacity: 1 !important;
+}
+
+/* Melhorias para o container da imagem ampliada */
+.medium-zoom--open img {
+  position: relative;
+  z-index: 1000;
+}

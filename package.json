@@ -7,13 +7,16 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs && node ./copy-dist.js",
     "docs:preview": "vitepress preview docs",
-    "deploy": "npm run docs:build && git add -A && git commit -m 'Deploy: update documentation' && git push origin gh-pages"
+    "deploy": "npm run docs:build && git add -A && git commit -m \"Deploy: update documentation\" && git push origin gh-pages"
   },
   "dependencies": {
+    "medium-zoom": "^1.1.0",
+    "mermaid": "^11.12.2",
+    "vitepress-plugin-mermaid": "^2.0.17",
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0",
-    "@vitejs/plugin-vue": "^4.5.0"
+    "@vitejs/plugin-vue": "^4.5.0",
+    "vitepress": "^1.0.0"
   }
 }
