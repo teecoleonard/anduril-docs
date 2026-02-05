@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs && node ./copy-dist.js",
-    "docs:preview": "vitepress preview docs",
-    "deploy": "npm run docs:build && git add -A && git commit -m \"Deploy: update documentation\" && git push origin gh-pages"
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "medium-zoom": "^1.1.0",
