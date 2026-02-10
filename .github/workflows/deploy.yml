@@ -27,21 +27,27 @@ jobs:
       
       - name: Deploy to gh-pages
         run: |
+          # Copy build to temporary location
+          cp -r docs/.vitepress/dist dist-output
+          
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Checkout gh-pages branch
+          # Checkout and reset gh-pages
           git fetch origin gh-pages
           git checkout gh-pages
+          git reset --hard origin/gh-pages
           
-          # Clean everything except .git
-          find . -mindepth 1 -not -path './.git/*' -delete
+          # Remove everything except .git
+          find . -maxdepth 1 -not -name '.git' -not -name '.' -exec rm -rf {} +
           
-          # Copy build output
-          cp -r docs/.vitepress/dist/* .
+          # Copy docs folder from main
+          mkdir -p docs
+          cp -r ../dist-output/* docs/
           
           # Commit and push
-          git add .
-          git diff --cached --quiet || (git commit -m "chore: deploy docs build [$(date)]" && git push origin gh-pages)
+          git add docs/
+          git commit -m "chore: deploy" || true
+          git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
