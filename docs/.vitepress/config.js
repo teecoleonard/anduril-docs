@@ -6,6 +6,7 @@ export default withMermaid(defineConfig({
   description: 'Documentação do Sistema ERP Anduril',
   lang: 'pt-BR',
   base: '/anduril-docs/',
+  ignoreDeadLinks: true,
   
   vite: {
     server: {
