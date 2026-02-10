@@ -1,23 +1,25 @@
-# 🏗️ Como Registrar Terreno
+# Como Registrar Terreno
 
-## 🎯 Objetivo
+## Objetivo
 Aprender a cadastrar um novo terreno no sistema.
 
----
-
-## ✅ Pré-requisitos
-- Sistema aberto
+## Pré-requisitos
 - Dados do terreno disponíveis
 
----
+## Localização
 
-## 🔢 Passo-a-Passo
+**Dashboard → Terrenos → Novo Terreno**
+
+
+## Passo-a-Passo
 
 1. Acesse **Terrenos** no menu
-2. Clique em **"+ Novo Terreno"**
+2. Clique em **"Novo Terreno"**
 3. Preencha os dados do terreno
-4. Clique em **"Salvar"**
+4. Clique em **"Criar"**
 
----
+> ![alt text](image-2.png)
+
+> ![alt text](image-1.png)
 
 **Guia anterior**: [Terrenos](./index.md)

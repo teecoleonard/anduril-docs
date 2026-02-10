@@ -1,23 +1,28 @@
-# 🎟️ Como Gerar Boleto por Contrato
+# Como Gerar Boleto por Contrato
 
-## 🎯 Objetivo
+## Objetivo
 Aprender a gerar boletos a partir de um contrato.
 
----
-
-## ✅ Pré-requisitos
+## Pré-requisitos
 - Contrato cadastrado e ativo
 - Dados bancários configurados
 
----
-
-## 🔢 Passo-a-Passo
+## Passo-a-Passo
 
 1. Acesse **Boletos** no menu
-2. Clique em **"+ Novo Boleto"**
-3. Selecione o contrato
-4. Defina a data de vencimento
-5. Clique em **"Salvar"**
+2. Clique em **"Gerar Boletos"**
+
+> ![alt text](image.png)
+
+
+3. Selecione um contrato ou múltiplos contratos
+
+> ![alt text](image-1.png)
+
+4. Selecionar o boleto e conferir o seu vencimento previsto
+5. Clique em **"Gerar"**
+
+> ![alt text](image-2.png)
 
 ---
 

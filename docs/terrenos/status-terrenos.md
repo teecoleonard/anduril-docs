@@ -1,18 +1,16 @@
-# 📊 Status dos Terrenos
+# Status dos Terrenos
 
-## 📋 Visão Geral
+## Visão Geral
 
 Os terrenos possuem diferentes status que indicam sua disponibilidade.
 
----
-
-## 🎯 Estados Possíveis
+## Estados Possíveis
 
 ### 🟢 **Disponível**
 Terreno livre para reserva
 
 ### 🟡 **Reservado**
-Terreno pré-reservado
+Terreno pré-reservado (pode ficar nesse status por 7 dias)
 
 ### 🔴 **Vendido**
 Terreno vendido e indisponível

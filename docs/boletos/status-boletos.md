@@ -1,24 +1,28 @@
-# 📊 Status dos Boletos
+# Status dos Boletos
 
-## 📋 Visão Geral
+## Visão Geral
 
 Os boletos possuem diferentes status indicando seu ciclo de vida.
 
----
+## Estados Possíveis
 
-## 🎯 Estados Possíveis
-
-### 📋 **Gerado**
+#### **Ativo**🟢
 Boleto criado mas não registrado no banco
 
-### 📤 **Enviado**
-Boleto registrado e enviado ao banco
+#### **Ativo Parcialmente**🟢
+Boleto pago parcialmente, mas não liquidado total
 
-### ✅ **Pago**
-Boleto recebido e liquidado
+#### **Liquidado**🔵
+Boleto recebido e liquidado via CNAB
 
-### ❌ **Vencido**
+#### **Baixado Manual**🟣
+Boleto recebido e liquidado manualmente pelo usuário
+
+#### **Vencido**🔴
 Boleto não pago após data de vencimento
+
+#### **Cancelado**⚫
+Boleto cancelado pelo usuário, porém pode ser reativado no gerador de boleto
 
 ---
 

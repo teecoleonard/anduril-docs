@@ -1,4 +1,4 @@
-# 📋 Como Gerar Contrato
+# Como Gerar Contrato
 
 ## Objetivo
 Criar um novo contrato vinculado a um cliente.
@@ -17,14 +17,19 @@ Criar um novo contrato vinculado a um cliente.
 
 1. Acesse **"Contratos"** no menu
 2. Clique em **"Novo Contrato"** (no topo direito)
+
+> ![alt text](image-3.png)
+
+
 3. Selecione o cliente
 4. Selecione o terreno (valor total é preenchido automaticamente ao selecionar terreno)
 5. Preencha os dados do contrato
-6. Clique em **"Salvar"**
 
 > ![alt text](image.png)
 
-> ![alt text](image-1.png)
+6. Clique em **"Criar"**
+
+> ![alt text](image-4.png)
 
 ---
 
@@ -46,11 +51,16 @@ Na tela de cadastro do contrato, você verá os seguintes campos:
 | **Dia do Vencimento** | Número | ❌ |
 | **Primeira Parcela** | Número Flutuante | ❌ |
 
-### **Etapa 3: Preencher Dados**
 
-Apenas marque como **Contrato Especial** para os contratos que não passaram pelo reajuste atual
+## **Considerações**
+
+Apenas marque como **Contrato Especial** para os contratos que não passaram pelo reajuste atual, segue imagem exemplo:
 
 > ![alt text](image-2.png)
+
+Caso for um contrato antigo, selecionar **Contrato Antigo/Importado** para que você consiga preencher a data de vencimento correta daquele contrato, segue imagem exemplo:
+
+> ![alt text](image-1.png)
 
 ## Próximos Passos
 

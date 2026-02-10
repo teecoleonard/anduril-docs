@@ -36,8 +36,7 @@ export default withMermaid(defineConfig({
           { text: '🏦 CNAB', link: '/cnab/' },
           { text: '🏢 Empresa', link: '/empresa/' },
           { text: '📊 Exportação', link: '/exportacao/' },
-          { text: '⚙️ Sistema', link: '/sistema/' },
-          { text: '🛠️ Desenvolvimento', link: '/desenvolvimento/' }
+          { text: '⚙️ Sistema', link: '/sistema/' }
         ]
       }
     ],
@@ -48,8 +47,7 @@ export default withMermaid(defineConfig({
           text: 'Clientes',
           items: [
             { text: 'Visão Geral', link: '/clientes/' },
-            { text: 'Como Registrar Cliente', link: '/clientes/como-registrar-cliente' },
-            { text: 'Status de Clientes', link: '/clientes/status-clientes' }
+            { text: 'Como Registrar Cliente', link: '/clientes/como-registrar-cliente' }
           ]
         }
       ],
@@ -59,8 +57,16 @@ export default withMermaid(defineConfig({
           items: [
             { text: 'Visão Geral', link: '/contratos/' },
             { text: 'Como Gerar Contrato', link: '/contratos/como-gerar-contrato' },
-            { text: 'Status de Contratos', link: '/contratos/status-contratos' },
-            { text: 'Análise de Datas de Vencimento', link: '/contratos/ANALISE_DATAS_VENCIMENTO_REAJUSTE' }
+            { text: 'Status de Contratos', link: '/contratos/status-contratos' }
+          ]
+        },
+        {
+          text: 'Reajustes',
+          collapsed: false,
+          items: [
+            { text: 'Visão Geral', link: '/contratos/reajustes/' },
+            { text: 'Arquitetura', link: '/contratos/reajustes/arquitetura' },
+            { text: 'Planejamento Longo Prazo', link: '/contratos/reajustes/longo-prazo' }
           ]
         }
       ],
@@ -89,9 +95,9 @@ export default withMermaid(defineConfig({
           text: 'CNAB',
           items: [
             { text: 'Visão Geral', link: '/cnab/' },
+            { text: 'Status de Remessas', link: '/cnab/status-remessas' },
             { text: 'Como Gerar Remessa', link: '/cnab/como-gerar-remessa' },
-            { text: 'Como Importar Retorno', link: '/cnab/como-importar-retorno' },
-            { text: 'Status de Remessas', link: '/cnab/status-remessas' }
+            { text: 'Como Importar Retorno', link: '/cnab/como-importar-retorno' }
           ]
         }
       ],
@@ -99,7 +105,8 @@ export default withMermaid(defineConfig({
         {
           text: 'Empresa',
           items: [
-            { text: 'Visão Geral', link: '/empresa/' }
+            { text: 'Visão Geral', link: '/empresa/' },
+            { text: 'Como Cadastrar Empresa', link: '/empresa/como-cadastrar-empresa' }
           ]
         }
       ],
@@ -115,19 +122,8 @@ export default withMermaid(defineConfig({
         {
           text: 'Sistema',
           items: [
-            { text: 'Visão Geral', link: '/sistema/' }
-          ]
-        }
-      ],
-      '/desenvolvimento/': [
-        {
-          text: 'Desenvolvimento',
-          items: [
-            { text: 'Visão Geral', link: '/desenvolvimento/' },
-            { text: 'Fases de Desenvolvimento', link: '/desenvolvimento/FASES-DESENVOLVIMENTO' },
-            { text: 'Resumo de Correções', link: '/desenvolvimento/BUILD_FIX_SUMMARY' },
-            { text: 'Diagnóstico Node Produção', link: '/desenvolvimento/DIAGNOSTICO_PROBLEMA_NODE_PRODUCAO' },
-            { text: 'Refactoring Completo', link: '/desenvolvimento/FASE_3_REFACTORING_COMPLETO' }
+            { text: 'Visão Geral', link: '/sistema/' },
+            { text: 'Sistema de Backup', link: '/sistema/SISTEMA_BACKUP' }
           ]
         }
       ]

@@ -1,31 +1,35 @@
 # Como Registrar um Novo Cliente
 
 ## Objetivo
-Aprender passo-a-passo como cadastrar um novo cliente no ERP Anduril.
+Como cadastrar um novo cliente no ERP Anduril.
 
 ## Pré-requisitos
-- ✓ Sistema ERP Anduril instalado e aberto
-- ✓ Ter dados do cliente disponíveis (nome completo, CPF/CNPJ, telefone, endereço, etc...)
+- Sistema ERP Anduril instalado e aberto
+- Ter todos os dados do cliente disponíveis
 
 ## Localização
 **Dashboard → Clientes → Novo Cliente**
 
 ## Passo-a-Passo
 
-### **Etapa 1: Acessar a Tela de Novo Cliente**
+### **Acessar a Tela de Novo Cliente**
 
 1. Acesse **"Clientes"** no menu na parte superior
 2. Clique em **"Novo Cliente"** (no topo direito)
-3. Preencha os dados do cliente
-4. Clique em **"Salvar"**
 
 > ![alt text](image.png)
 
+3. Preencha os dados do cliente
+
 > ![alt text](image-1.png)
+
+4. Clique em **"Criar"**
+
+> ![alt text](image-2.png)
 
 ---
 
-### **Etapa 2: Preencher Dados**
+### **Preencher Dados**
 
 Na tela de cadastro, você verá os seguintes campos:
 
@@ -64,7 +68,7 @@ Na tela de cadastro, você verá os seguintes campos:
 
 ## Próximos Passos
 
-Após registrar o cliente, você pode criar um contrato associado.
+Após registrar o cliente, você pode criar um [contrato](../contratos/index.md) associado.
 
 ---
 

@@ -1,24 +1,22 @@
-# 📊 Status das Remessas
+# Status das Remessas
 
-## 📋 Visão Geral
+## Visão Geral
 
 As remessas CNAB possuem status indicando seu progresso no processamento.
 
----
+## Estados Possíveis
 
-## 🎯 Estados Possíveis
+### **Pendente** 🟢
+Remessa criada localmente e aguardando envio
 
-### 📋 **Gerada**
-Remessa criada localmente
-
-### 📤 **Enviada**
+### **Enviada** 🟡
 Remessa enviada ao banco
 
-### ✅ **Retornada**
-Retorno recebido do banco
+### **Processada** ✅
+Retorno processado dentro do sistema, status boleto atualizada
 
-### 🔗 **Vinculada**
-Remessa vinculada ao retorno
+### **Erro** 🟠
+Retorno processado com erro pelo banco
 
 ---
 

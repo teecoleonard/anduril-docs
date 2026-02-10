@@ -1,5 +1,7 @@
 # 📚 Documentação ERP Anduril - Índice Completo
 
+> **👉 [Em primeiro lugar, leia ESTE arquivo](./LEIA-ME-PRIMEIRO.md)** - Guia rápido de navegação da documentação reorganizada
+
 Bem-vindo à documentação completa do **ERP Anduril**! Esta documentação é organizada por módulos para facilitar seu entendimento e uso do sistema.
 
 ---
@@ -25,6 +27,12 @@ Gestão completa de contratos e sua relação com clientes.
 - Datas de vencimento e reajustes
 - Relação contrato-cliente
 
+**🔸 [Sub-módulo: Reajustes](./contratos/reajustes/)**
+- Solução de sincronização de saldo devedor
+- Arquitetura do sistema de reajustes
+- Guia de testes completo
+- Análise de reajustes a longo prazo (30+ anos)
+
 ---
 
 ### 3️⃣ [Terrenos](./terrenos/README.md)
@@ -35,6 +43,8 @@ Cadastro, gerenciamento e alertas de terrenos disponíveis.
 - Status dos terrenos
 - Sistema de alertas para terrenos reservados
 - Validação de dados
+
+**📁 [Guias Práticos](./terrenos/guias/)** - Passo-a-passo de operações comuns
 
 ---
 
@@ -49,6 +59,8 @@ Criação, gestão e liquidação de boletos bancários.
 - Status dos boletos
 - Liquidação manual
 
+**📁 [Guias Práticos](./boletos/guias/)** - Instruções passo-a-passo
+
 ---
 
 ### 5️⃣ [CNAB](./cnab/README.md)
@@ -61,6 +73,10 @@ Integração bancária com padrão CNAB 240 para remessas e retornos.
 - Diagnóstico de problemas
 - Vinculação remessa-retorno
 
+**📁 Organização por Tipo:**
+- **[Guias Práticos](./cnab/guias/)** - Como fazer (geração, importação)
+- **[Análises Técnicas](./cnab/analises/)** - Documentação de implementação e diagnóstico
+
 ---
 
 ### 6️⃣ [Empresa](./empresa/README.md)
@@ -70,6 +86,8 @@ Dados e configuração da empresa para operações bancárias.
 - Como configurar dados da empresa
 - Dados bancários necessários
 - CNPJ e informações legais
+
+**📁 [Configuração](./empresa/configuracao/)** - Guias de setup
 
 ---
 
@@ -91,6 +109,8 @@ Funcionalidades gerais de sistema, backup e gerenciamento de banco de dados.
 - Gerenciamento de banco de dados
 - Restauração de backups
 - Visualização de informações
+
+**📁 [Backup e Restauração](./sistema/backup/)** - Guias de operação
 
 ---
 
@@ -118,11 +138,47 @@ Lá você encontrará:
 
 ---
 
+## 🚀 Mudanças Recentes
+
+📌 **[Mudanças Recentes - Fevereiro 2026](./MUDANCAS_RECENTES.md)**
+
+Confira as últimas implementações:
+- Campo "Custo" em Terrenos e Contratos
+- Ajuste manual de data de vencimento
+- Otimizações de IPC para links externos
+- Correções de tipos booleanos em Cliente
+- Melhorias de interface e estilo
+
+---
+
+## 📊 Documentação Técnica (Referência)
+
+### 📋 Análises de Implementação
+**[Análises Implementação](./analises-implementacao/)**
+- Documentação histórica de features
+- Arquitetura de features específicas
+- Guias de teste e validação
+
+### 🏗️ Análises de Backend
+**[Backend Análise](./backend-analise/)**
+- Especificações CNAB técnicas
+- Análises de banco de dados
+- Documentação de schemas
+
+### 📚 Histórico
+**[Histórico de Desenvolvimento](./historico/)**
+- Fases concluídas
+- Decisões arquiteturais
+- Logs de desenvolvimento
+
+---
+
 ## ✨ Recursos Rápidos
 
 - **[README Principal](../README.md)** - Visão geral do projeto
+- **[README Backend](../backend/README_ANALISE_RETORNO_CNAB.md)** - Análise técnica CNAB
 - **Contato/Suporte** - (Adicionar conforme necessário)
 
 ---
 
-**Última atualização**: Fevereiro 2026
+**Última atualização**: Fevereiro 7, 2026
