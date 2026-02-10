@@ -1,0 +1,48 @@
+name: Deploy VitePress
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'package.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+      
+      - run: npm install
+      - run: npm run docs:build
+      
+      - name: Deploy to gh-pages
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Checkout gh-pages branch
+          git fetch origin gh-pages
+          git checkout gh-pages
+          git reset --hard origin/gh-pages
+          
+          # Clean everything except .git
+          find . -mindepth 1 -not -path './.git/*' -delete
+          
+          # Copy build output
+          cp -r docs/.vitepress/dist/* .
+          
+          # Commit and push
+          git add .
+          git diff --cached --quiet || (git commit -m "chore: deploy docs build [$(date)]" && git push origin gh-pages)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
