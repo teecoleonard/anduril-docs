@@ -27,8 +27,8 @@ jobs:
       
       - name: Deploy to gh-pages
         run: |
-          # Copy build to temporary location
-          cp -r docs/.vitepress/dist dist-output
+          # Copy build to /tmp (persists between branch changes)
+          cp -r docs/.vitepress/dist /tmp/vitepress-dist
           
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -41,9 +41,9 @@ jobs:
           # Remove everything except .git
           find . -maxdepth 1 -not -name '.git' -not -name '.' -exec rm -rf {} +
           
-          # Copy docs folder from main
+          # Copy docs folder from /tmp
           mkdir -p docs
-          cp -r ../dist-output/* docs/
+          cp -r /tmp/vitepress-dist/* docs/
           
           # Commit and push
           git add docs/
