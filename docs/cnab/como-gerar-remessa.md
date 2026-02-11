@@ -51,7 +51,7 @@ O sistema exibe os dados que serão usados:
 - Data de vencimento
 - Status
 
-### **Etapa 4: Revisar Resumo**
+### **Revisar Resumo**
 
 Antes de gerar, verifique:
 
@@ -73,7 +73,7 @@ Resumo da Remessa
 
 > ![alt text](image-3.png)
 
-### **Etapa 6: Salvar o Arquivo**
+### **Salvar o Arquivo**
 
 O arquivo gerado será: **CBR2026020920.txt**
 
