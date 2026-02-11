@@ -4,7 +4,6 @@ Integração bancária com padrão CNAB 240 para remessas e retornos.
 
 ## Guias Disponíveis
 
-### Guias Práticos 
 - [Como Gerar Remessa](./como-gerar-remessa.md) - Passo a passo para criar remessa CNAB
 - [Como Importar Retorno](./como-importar-retorno.md) - Passo a passo para importar retorno bancário
 - [Status das Remessas](./status-remessas.md) - Estados e validações

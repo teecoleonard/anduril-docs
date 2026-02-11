@@ -12,18 +12,16 @@ Aprender como processar um retorno CNAB do banco para atualizar status de pagame
 ## Localização
 **Dashboard → CNAB → Processar Retorno**
 
----
-
 ## Passo-a-Passo
 
-### **Etapa 1: Acessar Importar Retorno**
+### **Acessar Importar Retorno**
 
 1. Clique em **"CNAB"** no menu lateral
 2. Clique em **Processar Retorno"**
 
 ![alt text](image-4.png)
 
-### **Etapa 2: Selecionar Arquivo de Retorno**
+### **Selecionar Arquivo de Retorno**
 
 1. Clique em **"Escolher Arquivo"** ou **"Procurar"**
 2. Localize o arquivo de retorno do banco
@@ -35,9 +33,7 @@ Aprender como processar um retorno CNAB do banco para atualizar status de pagame
 
 > ![alt text](image-6.png)
 
----
-
-### **Etapa 3: Verificar Dados do Retorno**
+### **Verificar Dados do Retorno**
 
 Sistema exibe informações sobre o arquivo:
 
@@ -47,27 +43,12 @@ Sistema exibe informações sobre o arquivo:
 | **Boletos no Retorno** | Quantos boletos estão no arquivo |
 | **Erros Detectados** | Se houver problemas |
 
-> **[FOTO: Informações sobre o arquivo de retorno]**
+> ![alt text](image-8.png)
 
-### **Etapa 4: Processar Retorno**
-
-1. Clique em **"Processar Retorno"** ou **"Importar"**
-2. Sistema analisará cada boleto do retorno
-3. Atualizará status conforme processamento
-
-**O que o sistema faz:**
-- ✅ Vincula retorno com remessa original
-- ✅ Atualiza status de cada boleto
-- ✅ Registra data de pagamento
-- ✅ Gera log de processamento
-
-> **[FOTO: Processamento em andamento - barra de progresso]**
-
-
-### **Etapa 5: Revisar Resultado**
+### **Revisar Resultado**
 
 Após processar, sistema mostra:
-
+```
 Resultado da Importação
 ├─ Total Processado: X boletos
 ├─ Pagos: X (✅ Status "aceito")
@@ -75,7 +56,7 @@ Resultado da Importação
 └─ Erros: X (⚠️ Corrigir e reprocessar)
 ```
 
-### **Etapa 6: Validar e Salvar**
+### **Validar e Salvar**
 
 1. Revise os resultados
 2. Clique em **"Confirmar"** para finalizar
@@ -122,12 +103,3 @@ Resultado da Importação
 **Dica 3: Resolver Rejeições Rapidamente**
 - Revise boletos rejeitados imediatamente
 - Reenvie após correção
-
-## Próximos Passos
-
-Após importar retorno:
-
-1. **Verificar boletos rejeitados** - Se houver
-2. **Corrigir dados** - Se necessário
-3. **Gerar nova remessa** - Caso haja rejeições
-4. **Gerar relatório** - Para análise

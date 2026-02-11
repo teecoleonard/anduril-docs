@@ -13,7 +13,7 @@ Criar um novo contrato vinculado a um cliente.
 
 ## Passo-a-Passo
 
-### **Etapa 1: Acessar a Tela de Novo Contrato**
+### **Acessar a Tela de Novo Contrato**
 
 1. Acesse **"Contratos"** no menu
 2. Clique em **"Novo Contrato"** (no topo direito)
@@ -33,7 +33,7 @@ Criar um novo contrato vinculado a um cliente.
 
 ---
 
-### **Etapa 2: Preencher Dados**
+### **Preencher Dados**
 
 Na tela de cadastro do contrato, você verá os seguintes campos:
 

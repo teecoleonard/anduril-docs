@@ -2,6 +2,10 @@
 
 Dados e configuração da empresa para operações bancárias e sistema.
 
+## Guias Disponíveis
+ 
+- [Como Cadastrar Empresa](./como-cadastrar-empresa.md) - Como fazer o cadastro da empresa dentro do sistema ERP
+
 ## Principal caractéristicas
 
 ```mermaid
@@ -108,8 +112,6 @@ EMPRESA: Anduril Imóveis Ltda.
 └─ STATUS: ✅ Configurado
    Pronto para gerar CNAB
 ```
-
----
 
 ## Explore
 

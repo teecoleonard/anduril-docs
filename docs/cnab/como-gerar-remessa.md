@@ -15,14 +15,14 @@ Aprender como gerar uma remessa CNAB 240 para enviar boletos ao banco.
 
 ## Passo-a-Passo
 
-### **Etapa 1: Acessar Gerar Remessa**
+### **Acessar Gerar Remessa**
 
 1. Clique em **"CNAB"** no menu superior
 2. Clique em **"Nova Remessa"**
 
 > ![alt text](image.png)
 
-### **Etapa 2: Verificar Dados da Empresa**
+### **Verificar Dados da Empresa**
 
 O sistema exibe os dados que serão usados:
 
@@ -40,7 +40,7 @@ O sistema exibe os dados que serão usados:
 
 > ![alt text](image-2.png)
 
-### **Etapa 3: Selecionar Boletos**
+### **Selecionar Boletos**
 
 1. Sistema mostra lista de boletos com status **"Aberto"**
 2. Selecione os boletos que deseja incluir na remessa
@@ -65,7 +65,7 @@ Resumo da Remessa
 
 > ![alt text](image-1.png)
 
-### **Etapa 5: Gerar Remessa**
+### **Gerar Remessa**
 
 1. Clique em **"Gerar Remessa CNAB"**
 2. Sistema processará os dados

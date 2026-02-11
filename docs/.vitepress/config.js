@@ -30,14 +30,14 @@ export default withMermaid(defineConfig({
       {
         text: 'Documentação',
         items: [
-          { text: '👥 Clientes', link: '/clientes/' },
-          { text: '📋 Contratos', link: '/contratos/' },
-          { text: '🏠 Terrenos', link: '/terrenos/' },
-          { text: '💳 Boletos', link: '/boletos/' },
-          { text: '🏦 CNAB', link: '/cnab/' },
-          { text: '🏢 Empresa', link: '/empresa/' },
-          { text: '📊 Exportação', link: '/exportacao/' },
-          { text: '⚙️ Sistema', link: '/sistema/' }
+          { text: 'Clientes', link: '/clientes/' },
+          { text: 'Contratos', link: '/contratos/' },
+          { text: 'Terrenos', link: '/terrenos/' },
+          { text: 'Boletos', link: '/boletos/' },
+          { text: 'CNAB', link: '/cnab/' },
+          { text: 'Empresa', link: '/empresa/' },
+          { text: 'Exportação', link: '/exportacao/' },
+          { text: 'Sistema', link: '/sistema/' }
         ]
       }
     ],
@@ -115,7 +115,8 @@ export default withMermaid(defineConfig({
         {
           text: 'Exportação',
           items: [
-            { text: 'Visão Geral', link: '/exportacao/' }
+            { text: 'Visão Geral', link: '/exportacao/' },
+            { text: 'Como Gerar Exportação', link: '/exportacao/como-gerar-exportacao' }
           ]
         }
       ],
@@ -124,7 +125,7 @@ export default withMermaid(defineConfig({
           text: 'Sistema',
           items: [
             { text: 'Visão Geral', link: '/sistema/' },
-            { text: 'Sistema de Backup', link: '/sistema/SISTEMA_BACKUP' }
+            { text: 'Sistema de Backup', link: '/sistema/sistema-de-backup' }
           ]
         }
       ]

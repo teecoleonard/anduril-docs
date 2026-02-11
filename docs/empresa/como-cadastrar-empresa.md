@@ -13,7 +13,7 @@ Fazer o vinculo da empresa em conjunto com o sistema ERP
 
 ## Passo-a-Passo
 
-### **Etapa 1: Acessar a Tela de Novo Contrato**
+### **Acessar a Tela de Novo Contrato**
 
 1. Acesse **"Empresa"** no menu
 2. Preencha todos os dados de identificação da empresa
