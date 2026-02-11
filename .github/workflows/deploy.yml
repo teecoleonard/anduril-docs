@@ -4,12 +4,15 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'docs/**'
-      - 'package.json'
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -22,32 +25,20 @@ jobs:
           node-version: 18
           cache: npm
       
-      - run: npm install
-      - run: npm run docs:build
+      - name: Install dependencies
+        run: npm install
       
-      - name: Deploy to gh-pages
-        run: |
-          # Copy build to /tmp (persists between branch changes)
-          cp -r docs/.vitepress/dist /tmp/vitepress-dist
-          
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          
-          # Checkout and reset gh-pages
-          git fetch origin gh-pages
-          git checkout gh-pages
-          git reset --hard origin/gh-pages
-          
-          # Remove everything except .git
-          find . -maxdepth 1 -not -name '.git' -not -name '.' -exec rm -rf {} +
-          
-          # Copy docs folder from /tmp
-          mkdir -p docs
-          cp -r /tmp/vitepress-dist/* docs/
-          
-          # Commit and push
-          git add docs/
-          git commit -m "chore: deploy" || true
-          git push origin gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build VitePress
+        run: npm run docs:build
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
